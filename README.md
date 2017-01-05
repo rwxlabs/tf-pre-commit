@@ -1,5 +1,7 @@
 # Terraform pre-commit hook
 
+ Terraform pre-commit hook with terraform_fmt and terraform_validate.
+
 ## Usage
 
 Install the [pre-commit](http://pre-commit.com) package by Yelp
@@ -17,3 +19,9 @@ Once `pre-commit` is installed, copy the below example `.pre-commit-config.yaml`
   - id: terraform_validate
   - id: terraform_fmt
 ```
+
+Next run `pre-commit install` from within your repository to install the hook. Test the hook by running `pre-commit run --all-files`. This should flag issues if there are any.
+
+## Credits
+
+Original hook by [antonbabenko](https://github.com/antonbabenko/pre-commit-terraform)
