@@ -1,0 +1,14 @@
+-   id: terraform_fmt
+    name: Terraform fmt
+    description: Rewrites all Terraform configuration files to a canonical format.
+    entry: terraform_fmt.sh
+    language: script
+    files: \.tf$
+    exclude: \.terraform\/.*$
+-   id: terraform_validate
+    name: Terraform validate
+    description: Validates all Terraform configuration files
+    entry: terraform_validate.sh
+    language: script
+    files: \.tf$
+    exclude: \.terraform\/.*$
