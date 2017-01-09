@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 #
-# Rewrite terraform files (*.tf) to canonical format
+# Validate terraform configuration
 
 set -e
 
-terraform validate ${PWD}
+if ls ${PWD}/*.tf &> /dev/null; then
+    terraform validate ${PWD}
+fi
+

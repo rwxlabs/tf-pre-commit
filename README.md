@@ -14,13 +14,15 @@ Once `pre-commit` is installed, copy the below example `.pre-commit-config.yaml`
 
 ```
 - repo: git://github.com/rwxlabs/tf-pre-commit
-  sha: v1.0.0
+  sha: v1.0.1
   hooks:
   - id: terraform_validate
   - id: terraform_fmt
 ```
 
-Next run `pre-commit install` from within your repository to install the hook. Test the hook by running `pre-commit run --all-files`. This should flag issues if there are any.
+Next run `pre-commit install` from within your repository to install the hook.
+
+Test the hook by running `pre-commit run --all-files`. This should flag issues if there are any.
 
 ## Credits
 
